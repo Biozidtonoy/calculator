@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 2);
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    height: 560px;
+    width: 430px;
+}
+.inputDisplay{
+    border: 1px solid white;
+    border-bottom: none;
+    height: 50px;
+}
+.outputDisplay{
+    border: 1px solid white;
+    border-top: none;
+    height: 50px;
+}
+.btnsBox{
+    margin-top: 10px;
+    display: flex;
+}
+.numBtns{
+    border: none;
+    border-right: 0.5px solid rgb(243, 243, 243);
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.btn,.btns{
+    font-size: 20px;
+    height: 70px;
+    width: 60px;
+}
+
+.operators{
+    height: 350px;
+    width: 150px;
+    padding: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}

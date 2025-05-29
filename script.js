@@ -18,9 +18,9 @@ function divi(num1,num2){
 
 // operate the upper function
 function operate(){
-    let firstNum = parseFloat(prompt("1st num"));
-    let op = prompt("enter operator : +, - , * ,/");
-    let secNum = parseFloat(prompt("2nd num"));
+    // let firstNum = parseFloat(prompt("1st num"));
+    // let op = prompt("enter operator : +, - , * ,/");
+    // let secNum = parseFloat(prompt("2nd num"));
 
     if (op ==="+"){
         return add(firstNum,secNum);
