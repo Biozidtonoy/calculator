@@ -25,6 +25,23 @@ function operate(){
     const opButtons = document.querySelectorAll(".btns");
     const resBtn = document.querySelector(".resBtn");
     const undo = document.querySelector(".backspace");
+    const decimalBtn = document.querySelector(".dot");
+
+    decimalBtn.addEventListener('click', () => {
+        if (op === "") {
+            // still building the first number
+            if (!firstNum.includes(".")) {
+                firstNum += ".";
+                input.textContent += ".";
+            }
+        } else {
+            // building the second number
+            if (!secNum.includes(".")) {
+                secNum += ".";
+                input.textContent += ".";
+            }
+        }
+    });
 
     undo.addEventListener('click',()=>{
         if(op===""){

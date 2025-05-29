@@ -55,11 +55,7 @@ h1{
     justify-content: flex-start;
     align-items: flex-start;
 }
-/* .numBtns{
-    height: 100%;
-    width: 60%;
-    padding: 8px;
-} */
+
 .numBtns {
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +72,8 @@ h1{
     font-size: 25px;
     font-weight: 900;
     flex: 0 0 30%;  
-    height: 60px;   
+    height: 60px;  
+    cursor: pointer; 
 }
 .backspace{
     background-color: tomato;
@@ -84,21 +81,31 @@ h1{
     font-weight: 900;
     flex: 0 0 30%;  
     height: 60px;  
+    cursor: pointer;
+}
+.dot{
+    /* background-color: tomato; */
+    font-size: 25px;
+    font-weight: 900;
+    flex: 0 0 30%;  
+    height: 60px;  
+    cursor: pointer;
 }
 .btns{
     font-size: 25px;
     font-weight: 900;
     flex: 0 0 40%;  
-    height: 70px;   
+    height: 70px;  
+    cursor: pointer; 
 }
 
 .clearBtn,.resBtn{
     background-color: tomato;
-    /* margin-top: 10px; */
     font-size: 25px;
     font-weight: 900;
     height: 50px;
     width: 92%;
+    cursor: pointer;
 }
 .copyright{
     margin-top: 150px;
