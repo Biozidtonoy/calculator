@@ -22,7 +22,7 @@ h1{
     background-color: black;
     border-radius: 20px;
     padding: 10px;
-    height: 60%;
+    min-height: 500px;
     width: 400px;
 }
 .inputDisplay{
@@ -55,40 +55,49 @@ h1{
     justify-content: flex-start;
     align-items: flex-start;
 }
-.numBtns{
+/* .numBtns{
     height: 100%;
     width: 60%;
     padding: 8px;
+} */
+.numBtns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
 }
 .operators{
-
-    height: 100%;
-    width: 40%;
-    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
 }
 .btn{
     font-size: 25px;
     font-weight: 900;
-    height: 25%;
-    width: 32%;
+    flex: 0 0 30%;  
+    height: 60px;   
 }
-.zero{
-    width: 100%;
-}
-.btns{
-    
+.backspace{
+    background-color: tomato;
     font-size: 25px;
     font-weight: 900;
-    height: 30%;
-    width: 45%;
+    flex: 0 0 30%;  
+    height: 60px;  
+}
+.btns{
+    font-size: 25px;
+    font-weight: 900;
+    flex: 0 0 40%;  
+    height: 70px;   
 }
 
 .clearBtn,.resBtn{
     background-color: tomato;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 25px;
     font-weight: 900;
-    height: 18%;
+    height: 50px;
     width: 92%;
 }
 .copyright{
@@ -98,6 +107,6 @@ h1{
 .btn:hover,.btns:hover{
     background-color: #bbb;
 }
-.clearBtn:hover,.resBtn:hover{
+.clearBtn:hover,.resBtn:hover,.backspace:hover{
 background-color: rgb(250, 125, 103);
 }

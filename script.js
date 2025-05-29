@@ -24,6 +24,20 @@ function operate(){
     const clearBtn = document.querySelector(".clearBtn");
     const opButtons = document.querySelectorAll(".btns");
     const resBtn = document.querySelector(".resBtn");
+    const undo = document.querySelector(".backspace");
+
+    undo.addEventListener('click',()=>{
+        if(op===""){
+            firstNum = "";
+            input.textContent = "";
+        }else if(secNum===""){
+            op = "";
+            input.textContent = "";
+        }else{
+            secNum= ""
+            input.textContent = "";
+        }
+    })
 
     clearBtn.addEventListener('click',()=>{ 
         firstNum = "";
